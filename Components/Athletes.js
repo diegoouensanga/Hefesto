@@ -21,14 +21,107 @@ class Athletes extends React.Component {
             <ScrollView>
 
 
-                <TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
                  <Image
                     style={styles.image_athlete}
-                    source={require('./daniels_laizans.png')}
+                    source={require('D:\Hefesto\Images\athletes\daniels_laizans.png')}
                   />
-
-
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Daniels Laizans</Text>
+                  <Text>Latvia</Text>
+                  </View>
                 </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\andrea_larosa.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Andrea Larosa</Text>
+                  <Text>Italia</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\ikhwan_sw.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Engku Mohd Ikhwan</Text>
+                  <Text>Malaysia</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\san_gohan.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>San Gohan</Text>
+                  <Text>France</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\viktor_kamenov.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Viktor Kamenov</Text>
+                  <Text>Bulgaria</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\kostya_shapoval.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Kostya Shapoval</Text>
+                  <Text>Russia</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\dan_rosenberg.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Dan Rosenberg</Text>
+                  <Text>Israël</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\eryc_ortiz.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Eryc Ortiz</Text>
+                  <Text>France</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\melnik_style.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Melnik style</Text>
+                  <Text>Ukrainia</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.touchable_athlete}>
+                 <Image
+                    style={styles.image_athlete}
+                    source={require('D:\Hefesto\Images\athletes\thomas_kurganov.png')}
+                  />
+                  <View style = {flexDirection = 'row'}>
+                  <Text>Thomas Kurganov</Text>
+                  <Text>USA</Text>
+                  </View>
+                </TouchableOpacity>
+
             </ScrollView>
 
 
@@ -46,6 +139,10 @@ const styles = StyleSheet.create({
 
         //flex: 1
     },
+    touchable_athlete:{
+        flexDirection: 'row',
+    },
+
     title: {
         marginTop: 30,
         fontWeight: "100"

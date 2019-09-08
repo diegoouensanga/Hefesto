@@ -10,6 +10,7 @@ import Training from '../Components/Training'
 
 import { StyleSheet, Image } from 'react-native'
 
+
 const HomeTabNavigator = createBottomTabNavigator({
     Competitions: {
         screen: Competitions,
