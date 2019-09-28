@@ -5,19 +5,39 @@ class Moves extends React.Component {
 
     render() {
         return(
+            <View >
+                <View style={margintop = 30}>
 
-
-
-
-
-            <View>
-                <Text style={styles.title}> Moves section coming soon </Text>
+                <Text style={fontSize = 40, fontWeight = 'bold', margintop = 30}>Moves</Text>
+                </View>
+            <TouchableOpacity style = {marginTop = 100}>
+                
                 <Image
-                    style={styles.image}
-                    source={require('../Images/under_construction_sign.jpg')}
+                    style={styles.movesimages}
+                    source={require('../Images/STATICS.png')}
+                />
+
+            </TouchableOpacity>
+
+            <TouchableOpacity >
+                
+                <Image
+                    style={styles.movesimages}
+                    source={require('../Images/STRENGTH.png')}
                 />
 
 
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+                
+                <Image
+                    style={styles.movesimages}
+                    source={require('../Images/DYNAMICS.png')}
+                />
+
+
+            </TouchableOpacity>
             </View>
 
 
@@ -37,11 +57,12 @@ const styles = StyleSheet.create({
         fontSize: 40
 
     },
-    image: {
-        marginTop : 100,
-        marginLeft : 30,
-        height : 300,
-        width : 300,
+    movesimages: {
+        marginTop : 10,
+        marginLeft : 2,
+    
+        height : 150,
+        width : 355,
 
     }
 })
