@@ -5,6 +5,7 @@ import { createStackNavigator, createBottomTabNavigator, createAppContainer } fr
 import React from 'react'
 import Athletes from '../Components/Athletes'
 import Moves from '../Components/Moves'
+import Statics from '../Components/Moves'
 import Competitions from '../Components/Competitions'
 import Training from '../Components/Training'
 
@@ -14,6 +15,8 @@ import { StyleSheet, Image } from 'react-native'
 const HomeTabNavigator = createBottomTabNavigator({
     Competitions: {
         screen: Competitions,
+
+
         navigationOptions: {
             tabBarIcon:() => {
                 return <Image
@@ -24,6 +27,7 @@ const HomeTabNavigator = createBottomTabNavigator({
     },
     Athletes: {
         screen: Athletes,
+
         navigationOptions: {
             tabBarIcon:() => {
                 return <Image
@@ -33,7 +37,8 @@ const HomeTabNavigator = createBottomTabNavigator({
         }
     },
     Moves: {
-        screen: Moves,
+        screen: MovesNavigator,
+
         navigationOptions: {
             tabBarIcon:() => {
                 return <Image
@@ -41,9 +46,12 @@ const HomeTabNavigator = createBottomTabNavigator({
                     style={styles.icon}/>
             }
         }
+        
     },
+    
     Training: {
         screen: Training,
+
         navigationOptions: {
             tabBarIcon:() => {
                 return <Image
@@ -55,7 +63,30 @@ const HomeTabNavigator = createBottomTabNavigator({
 
 
 
-    }, {
+
+
+    })
+    
+     const MovesNavigator = createStackNavigator({
+        Moves: {
+            screen: Moves,
+            navigationOptions: {
+                tabBarIcon:() => {
+                    return <Image
+                        source={require('../Images/STATICS.png')}
+                        style={styles.icon}/>
+                }
+            }
+        },
+        Statics:{
+            screen: Statics,
+
+
+            }, 
+    initialRouteName: 'Moves'
+}
+    
+    , {
     tabBarOptions: {
         showLabel: true,
         showIcon: true,
